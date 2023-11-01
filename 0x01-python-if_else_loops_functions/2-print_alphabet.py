@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-for charac in range ( ord('0'), ord('z') + 1):
-    print(chr(charac), end=' ')
+print(''.join([chr(i) for i in range(ord('a'), ord('z') + 1)]), end='')
