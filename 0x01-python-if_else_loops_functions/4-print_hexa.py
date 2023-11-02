@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-output = '\n'.join([f'{i} = {hex(i)}' for i in range(99)]) + '\n'
-print(output)
+for number in range(0, 99):
+    print("{} = 0x{:x}".format(number, number))
