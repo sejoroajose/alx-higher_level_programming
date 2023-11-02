@@ -1,2 +1,3 @@
-for i in range(99):
-    print(hex(i), ends = ' ')
+#!/usr/bin/python3
+for i in range (99):
+    print(f"{i} = {hex(i)}")
