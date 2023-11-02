@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-
-for i in range(ord('z'), ord('a') - 1, -1):
-    char = chr(i)
-    case = "Y" if (i - ord('z')) % 2 == 0 else "y"
-    print("{}".format(char if i % 2 == 0 else char.upper()), end='' if i != ord('a') else '\n')
+for c in range(ord('z'), ord('a') - 1, -1):
+    print("{:c}".format((c - 32) if c % 2 else c), end='')
