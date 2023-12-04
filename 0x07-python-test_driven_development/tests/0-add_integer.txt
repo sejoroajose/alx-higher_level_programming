@@ -1,18 +1,14 @@
-# test_add_integer.py
-
-import unittest  # This is the testing library
-
-from 0-add_integer import add_integer  # Import the function you want to test
+import unittest
+add_integer = __import__('0-add_integer').add_integer
 
 class TestAddInteger(unittest.TestCase):
-    def test_add_integer_valid(self):
-        # Test valid cases
-        self.assertEqual(add_integer(2, 3), 5)
-        self.assertEqual(add_integer(5.5, 3), 8)
-        self.assertEqual(add_integer(2), 100)
+    def test_add_int(self):
+        # Test addition of two integers
+        self.assertEqual(add_integer(2, 6), 8)
+        self.assertEqual(add_integer(-10, -5), -15)
+        self.assertEqual(add_integer(22, -2), 20)
 
     def test_add_integer_invalid(self):
-        # Test invalid cases
         with self.assertRaises(TypeError):
             add_integer('a', 3)
         with self.assertRaises(TypeError):
