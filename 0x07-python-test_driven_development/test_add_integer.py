@@ -1,5 +1,5 @@
 import unittest
-from 0-add_integer import add_integer
+add_integer = __import__('0-add_integer').add_integer
 
 class TestAddInteger(unittest.TestCase):
     def test_add_int(self):
