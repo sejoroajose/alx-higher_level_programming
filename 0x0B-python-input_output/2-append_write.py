@@ -16,10 +16,6 @@ def append_write(filename="", text=""):
              The number of string appended
     """
 
-    if filename:
-        try:
-            with open(filename, 'a', encoding='utf-8') as file:
-                chars_added = file.write(text)
-                return chars_added
-        except:
-            return 0
+    with open(filename, 'a', encoding='utf-8') as file:
+        chars_added = file.write(text)
+        return chars_added
