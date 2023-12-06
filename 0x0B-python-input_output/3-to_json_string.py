@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""to json string"""
 import json
 
 """ This module reutrns the JSON representation of an object """
