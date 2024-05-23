@@ -1,0 +1,12 @@
+-- Use the database hbtn_0d_tvshows
+USE hbtn_0d_tvshows;
+
+-- Select the title of the TV show and the genre ID from tv_shows and tv_show_genres tables
+-- Use LEFT JOIN to include all shows, even if they don't have a genre
+-- Filter the results to only include shows without a genre linked (where tv_show_genres.genre_id IS NULL)
+-- Sort the results by tv_shows.title and tv_show_genres.genre_id in ascending order
+SELECT tv_shows.title, tv_show_genres.genre_id
+FROM tv_shows
+LEFT JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id
+WHERE tv_show_genres.genre_id IS NULL
+ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
