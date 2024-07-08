@@ -8,4 +8,3 @@ if (args.length < 2) {
   const newList = args.sort((a, b) => b - a);
   console.log(newList[1]);
 }
-
