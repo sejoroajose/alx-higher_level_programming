@@ -14,7 +14,7 @@ const Rectangle = class {
         for (let j = 0; j < this.width; j++) {
           process.stdout.write('X');
         }
-	process.stdout.write('\n');
+        process.stdout.write('\n');
       }
     }
   }
